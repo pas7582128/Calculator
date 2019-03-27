@@ -6,183 +6,173 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_below="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_margin="10dp">
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="227dp"
-        android:text="1" />
+        android:text="1"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginBottom="227dp"
-        android:layout_toEndOf="@+id/button1"
-        android:text="2" />
+
+
+        android:text="2"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="227dp"
-        android:layout_toEndOf="@+id/button2"
-        android:text="3" />
+
+        android:text="3"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button_div"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="227dp"
-        android:text="÷" />
+        android:text="÷"
+        android:layout_weight="1"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="161dp"
-        android:text="4" />
+        android:text="4"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginBottom="161dp"
-        android:layout_toEndOf="@+id/button4"
-        android:text="5" />
+        android:text="5"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button4"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="0dp"
-        android:layout_toEndOf="@+id/button5"
-        android:text="6" />
+        android:text="6"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button_mult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="161dp"
-        android:layout_toEndOf="@+id/button6"
-        android:text="×" />
+        android:text="*"
+        android:layout_weight="1"/>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_below="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_margin="10dp">
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="95dp"
-        android:text="7" />
+        android:text="7"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginBottom="95dp"
-        android:layout_toEndOf="@+id/button7"
-        android:text="8" />
+        android:text="8"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="95dp"
-        android:layout_toEndOf="@+id/button8"
-        android:text="9" />
+        android:text="9"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button_minus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="95dp"
-        android:text="-" />
+        android:text="-"
+        android:layout_weight="1"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_margin="10dp"
+        android:id="@+id/ll4"
+        android:layout_below="@+id/ll3">
     <Button
         android:id="@+id/button_pt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="29dp"
-        android:text="." />
+        android:text="."
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginBottom="29dp"
-        android:layout_toEndOf="@+id/button_pt"
-        android:text="0" />
+        android:text="0"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button_equal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="111dp"
-        android:layout_marginBottom="29dp"
-        android:layout_toEndOf="@+id/button0"
-        android:text="=" />
+        android:text="="
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="29dp"
-        android:text="+" />
+        android:text="+"
+        android:layout_weight="1"/>
+    </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/button_backspace"
-        android:layout_width="88dp"
-        android:layout_height="50dp"
+    <LinearLayout
+        android:id="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="259dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="252dp"
-        android:src="@drawable/baseline_backspace_black_18dp" />
+        android:layout_marginTop="241dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/button_backspace"
+            android:layout_width="6dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_backspace_black_18dp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView_result"
@@ -191,10 +181,10 @@
         android:layout_below="@+id/textView_expression"
         android:layout_alignParentStart="true"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="17dp"
-        android:text=""
-        android:textSize="60px"/>
+        android:text="0"
+        android:textSize="60px" />
 
     <TextView
         android:id="@+id/textView_expression"
@@ -204,8 +194,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="134dp"
+        android:layout_marginTop="74dp"
         android:layout_marginEnd="17dp"
         android:text=""
-        android:textSize="60px"/>
+        android:textSize="60px" />
 </RelativeLayout>
