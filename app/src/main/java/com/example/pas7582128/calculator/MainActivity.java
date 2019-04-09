@@ -617,8 +617,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Expression e1=new Expression(str);
                 str=String.valueOf(e1.calculate());
+
                 if(!str.equals("NaN"))
                 Result.setText(str);
+
                 //Expr.setText(Expr.getText().toString()+"/");
             }
         });
@@ -738,7 +740,15 @@ public class MainActivity extends AppCompatActivity {
                 }
                 Expression e1=new Expression(str);
                 str=String.valueOf(e1.calculate());
-                if(!str.equals("NaN")) {
+                double a11=Double.parseDouble(str);
+
+                int a13=(int)a11;
+                String resu=String.valueOf((a13));
+
+                if(a11==a13){
+                    Result.setText(resu);
+                }
+                else if(!str.equals("NaN")) {
                     Expr.setText(str);
                     Result.setText("");
                 }
